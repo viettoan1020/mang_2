@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tudien</title>
+</head>
+<body>
+<script>
+    let arrs = [];
+    let n = prompt("Nhập số phần tử :")
+    for (let i =0; i < n; i++) {
+        arrs[i] = prompt("Nhập phần tử thứ " + i + " của mảng");
+    }
+    let reversedArray = [];
+    for (let i= n - 1; i >= 0; i--) {
+        reversedArray.push(arrs[i]);
+    }
+    document.write("mảng ban đầu : " + arrs + "<br/>");
+    document.write("Mảng đảo ngược :" + reversedArray);
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm và xóa phần tử khỏi mảng </title>
+</head>
+<body>
+<script>
+    let arr =[];
+    let n = parseInt(prompt("Nhập số phần tử của mảng"));
+    for (let i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("Nhập phần tử thứ " + i + " của mảng"));
+    }
+    let v = parseInt(prompt("Nhập số nguyên bạn muốn tìm kiếm: "));
+    for (let i = 0; i < n; i++) {
+        if ( v == arr[i]) {
+            v = arr[n-1];
+            arr[n-1] = v;
+        }else {
+            alert("v không có trong mảng đã nhập vào")
+        }
+    }
+</script>
+</body>
+</html>
